@@ -1,0 +1,115 @@
+# set the personality of the
+# LLM generated responses
+
+
+personality: "You are a conversational chatbot designed for a blood donation in Tanzania.
+              Be approachable and friendly, using welcoming phrases and positive language.
+              Respond to users with empathy and encouragement, acknowledging their willingness to donate and emphasizing the impact of their contribution. 
+              Provide accurate information about the blood donation process, eligibility criteria, benefits, and frequently asked questions.
+              Always maintain a respectful and polite tone, thanking users for considering donation and acknowledging their queries.
+              Offer support and guidance for scheduling appointments, finding donation centers, and addressing concerns users might have."
+                            
+
+# custom prompts to override the
+# default response generation prompt
+# the name MUST match an existing
+# bot utterance
+generate:
+  - name: "utter_test"
+    prompt: "prompt"
+
+# custom prompts to override the
+# default response rephrasing prompt
+# the name MUST match an existing
+# bot utterance
+rephrase:
+  - name: "utter_greet"
+    prompt: 'Greet the user according to the way user has greet. Be creative when greeting. 
+             The rephrased response should be provided in JSON format, structured as: \n\n
+             {"answer": "greeting"}\n\n
+             The greeting should align it with the user and the response should only include 
+             the "greeting" field with the generated greeting and no additional information. 
+             Please refrain from introducing any new information or generating fictional 
+             content. You can use the following data to craft the response. \n\n
+             data: 
+             {{response}} \n\n
+             user_query: `{{query}}`'
+
+  - name: "utter_goodbye"
+    prompt: 'Given the following response and the user query, please rephrase the response 
+             in a manner suitable to the user query. Ensure that the rephrased response is 
+             relevant to the query and conveys the same information as the original response. 
+             The rephrased response should be provided in JSON format, structured as: \n\n
+             {"answer": "rephrased_answer"}\n\n
+             Focus on modifying the response to align it with the user query while maintaining 
+             the same meaning. The response should only include the "rephrased_response" field 
+             with the modified answer and no additional information. Please refrain from 
+             introducing any new information or generating fictional content. \n\n
+             response: \n
+             {{response}} \n\n
+             user_query: `{{query}}`'
+
+# custom prompts to be used by LLM
+# related actions which can be retrieved
+# easily via the `prompts` package.
+# A custom name can be given to these prompts.
+custom:
+  - name: "welcome"
+    prompt: 'Construct an appropriate response to welcome the user for the first time. 
+             The response should be provided in JSON format, structured as: \n\n
+             {"answer": "welcome_response"}\n\n
+             The response should only include the "welcome_response" field 
+             with the generated welcome message and no additional information. Please 
+             refrain from introducing any new information or generating fictional content.'
+
+  - name: "greet"
+    prompt: 'Construct an appropriate response to greet the user. The response should be 
+             provided in JSON format, structured as: \n\n
+             {"answer": "greeting"}\n\n
+             The greeting should align it with the user and the response should only include 
+             the "greeting" field with the generated greeting and no additional information. 
+             Please refrain from introducing any new information or generating fictional 
+             content. You can use the following data to craft the response. \n\n
+             data: 
+             {{response}} \n\n
+             user_query: `{{query}}`'
+
+  - name: "goodbye"
+    prompt: 'Construct an appropriate response to bid farewell to the user. The response 
+             should be provided in JSON format, structured as: \n\n
+             {"answer": "goodbye"}\n\n
+             The response should only include the "goodbye" field with the generated goodbye 
+             message and no additional information. Please refrain from introducing any new 
+             information or generating fictional content.'
+
+  - name: "thanks"
+    prompt: 'Construct an appropriate response to thank the user. The response should be 
+             provided in JSON format, structured as: \n\n
+             {"answer": "thanks"}\n\n
+             The response should only include the "thanks" field with the generated thanks 
+             message and no additional information. Please refrain from introducing any new 
+             information or generating fictional content.'
+
+  - name: "affirm"
+    prompt: 'Construct an appropriate response to affirm the user. The response should be 
+             provided in JSON format, structured as: \n\n
+             {"answer": "affirm"}\n\n
+             The response should only include the "affirm" field with the generated affirm 
+             message and no additional information. Please refrain from introducing any new 
+             information or generating fictional content.'
+
+  - name: "deny"
+    prompt: 'Construct an appropriate response to deny the user. The response should be 
+             provided in JSON format, structured as: \n\n
+             {"answer": "deny"}\n\n
+             The response should only include the "deny" field with the generated deny 
+             message and no additional information. Please refrain from introducing any new 
+             information or generating fictional content.'
+
+  - name: "bot_challenge"
+    prompt: 'Construct an appropriate response to the bot challenge. The response should be 
+             provided in JSON format, structured as: \n\n
+             {"answer": "bot_challenge"}\n\n
+             The response should only include the "bot_challenge" field with the generated 
+             bot challenge message and no additional information. Please refrain from 
+             introducing any new information or generating fictional content.'
