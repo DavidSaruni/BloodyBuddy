@@ -20,7 +20,7 @@ class OpenAI:
         completions_max_tokens=int(
             os.environ.get("OPENAI_COMPLETIONS_MAX_TOKENS", 300)
         ),
-        completions_api_key="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",
+        completions_api_key="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",
     ):
         self.completions_model = completions_model
         self.completions_temperature = completions_temperature

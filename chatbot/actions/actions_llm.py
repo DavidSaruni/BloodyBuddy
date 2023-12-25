@@ -19,7 +19,7 @@ DEFAULT_REPHRASE_RESPONSE = os.environ.get(
 logger = logging.getLogger(__name__)
 
 # Set your OpenAI API key
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Rest of your code...
 
@@ -248,7 +248,7 @@ class ActionLLMRephraseResponseWelcome(Action):
         return []
 
 
-class ActionLLMGenerateResponseMenu(Action):
+class ActionLLMGenerateResponseFastFacts(Action):
     """
     A specific LLM response generation action
     for menu user intent (for stories).
@@ -274,7 +274,7 @@ class ActionLLMGenerateResponseMenu(Action):
 
         # get utter_menu response
         response = select_a_responses(
-            domain=domain, name="utter_menu", channel=input_channel
+            domain=domain, name="utter_fast_facts", channel=input_channel
         )
         if not response:
             dispatcher.utter_message(template=DEFAULT_REPHRASE_RESPONSE)
@@ -283,7 +283,7 @@ class ActionLLMGenerateResponseMenu(Action):
 
         llm = OpenAI()
         prompt = OpenAIPrompts.get_generate_prompt(
-            template="utter_menu",
+            template="utter_fast_facts",
             query=latest_query,
             context=response,
             configure_personality=True,

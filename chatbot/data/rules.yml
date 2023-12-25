@@ -17,19 +17,19 @@ rules:
   - intent: goodbye
   - action: action_llm_rephrase_response_common
 
-- rule: show menu
+- rule: show fast_facts
   steps:
-  - intent: menu
+  - intent: fast_facts
   - action: action_llm_generate_response_common
 
-- rule: show prices
+- rule: blood_drop
   steps:
-  - intent: prices
-  - action: action_llm_generate_response_prices
+  - intent: blood_drop
+  - action: action_llm_rephrase_response_common
 
-- rule: order
+- rule: show blood_centers_tanzania
   steps:
-  - intent: order
+  - intent: blood_centers_tanzania
   - action: action_llm_rephrase_response_common
 
 - rule: say anytime
@@ -46,50 +46,3 @@ rules:
   steps:
   - intent: deny
   - action: action_llm_rephrase_response_common
-
-- rule: show fast facts
-  steps:
-  - intent: fast_facts
-  - action: action_llm_rephrase_response_common
-
-- rule: blood drop facts
-  steps:
-  - intent: blood_drop_facts
-  - action: action_llm_rephrase_response_common
-
-- rule: bring friend
-  steps:
-  - intent: bring_friend
-  - action: action_llm_rephrase_response_common
-
-- rule: why donate blood
-  steps:
-  - intent: why_donate_blood
-  - action: action_llm_rephrase_response_common
-
-- rule: why me
-  steps:
-  - intent: why_me
-  - action: action_llm_rephrase_response_common
-
-- rule: voluntary donation
-  steps:
-  - intent: voluntary_donation
-  - action: action_llm_rephrase_response_common
-
-- rule: vnrbd
-  steps:
-  - intent: vnrbd
-  - action: action_llm_rephrase_response_common
-
-- rule: family replacement
-  steps:
-  - intent: family_replacement
-  - action: action_llm_rephrase_response_common
-
-- rule: paid donation
-  steps:
-  - intent: paid_donation
-  - action: action_llm_rephrase_response_common
-
-
