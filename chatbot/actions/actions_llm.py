@@ -19,7 +19,7 @@ DEFAULT_REPHRASE_RESPONSE = os.environ.get(
 logger = logging.getLogger(__name__)
 
 # Set your OpenAI API key
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Rest of your code...
 
