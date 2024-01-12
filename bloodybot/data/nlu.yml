@@ -17,23 +17,19 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: goodbye
+
+- intent: goodbye  # about zendawa
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - Can you tell me more about your company
+    - What's your company's name
+    - Provide information about your company.
+    - what does zendawa do
+
 
 - intent: affirm
   examples: |
     - yes
-    - y
+    - yeah
     - indeed
     - of course
     - that sounds good
@@ -49,43 +45,456 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
+- intent: menu
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - What are the fast facts about blood donation
+    - How long does it take to donate blood
+    - How often can I donate blood 
 
-- intent: mood_unhappy
+- intent: prices
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - show me the prices please
+    - can you show me the prices of different products
+    - show me the price of a cheapest panadol you have
+    - what is the cost for a wheelchair
+    - how much does apanadol cost
 
-- intent: bot_challenge
+# - intent: order
+#   examples: |
+#     - What are the fast facts about blood donation
+#     - How long does it take to donate blood
+#     - How often can I donate blood
+
+- intent: thank
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - thank you
+    - thanks
+    - thank you so much
+    - ty
+    - thank
+    - accept my gratitude
+
+- intent: fast_facts
+  examples: |
+    - What are the fast facts about blood donation
+    - Why you should consider donating blood
+
+- intent: blood_drop_facts
+  examples: |
+    - What are the quick facts about blood drop
+    - How do red blood cells function in the body
+    - What role do platelets play in the blood
+    - Why is plasma important in blood donation
+    
+- intent: bring_friend
+  examples: |
+    - Can I come with a friend in blood donation
+    - Can I bring a friend to donate blood
+    - Are there any specific requirements for someone accompanying a donor
+    - How does having a friend present impact the donation process
+
+- intent: why_donate_blood
+  examples: |
+    - Why you should consider donating blood
+    - Can you explain the impact of a single blood donation
+    - What specific conditions or situations require donated blood the most
+
+- intent: why_me
+  examples: |
+    - But why me
+    - How does blood donation benefit the donor
+    - What personal satisfaction comes from donating blood
+    - Why should I donate blood
+    - Why should I care about donating blood
+
+- intent: voluntary_donation
+  examples: |
+    - Is voluntary blood donation part of your life
+    - What motivates you to be a regular blood donor
+    - How do you encourage others to participate in blood donation
+
+- intent: vnrbd
+  examples: |
+    - What is Voluntary non-remunerated Blood Donor (VNRBD)
+    - What is the difference between voluntary and paid blood donation
+    - What are the benefits of voluntary blood donation
+    - Why is voluntary non-remunerated blood donor (VNRBD) important
+    - Why is voluntary non-remunerated blood donor (VNRBD) different from other types of blood donation
+
+- intent: family_replacement
+  examples: |
+    - What is Family Replacement Blood Donor
+    - What is the difference between voluntary and family replacement blood donation
+    - What are the benefits of family replacement blood donation
+    - Why is family replacement blood donor important
+    - Why is family replacement blood donor different from other types of blood donation
+
+- intent: paid_donation
+  examples: |
+    - What is Paid Blood Donor
+    - Why is paid blood donation not recommended in Tanzania
+    - What are the potential risks associated with paid blood donation
+    - What is the difference between voluntary and paid blood donation
+    - What are the benefits of paid blood donation
+    - Why is paid blood donor important
+    - Why is paid blood donor different from other types of blood donation
+
+- intent: autologous_donation
+  examples: |
+    - What is Autologous Blood Donor
+    - What are the benefits of autologous blood donation
+    - Why is autologous blood donor important
+    - Why is autologous blood donor different from other types of blood donation
+
+- intent: directed_donors
+  examples: |
+    - What is Directed Blood Donors
+    - What are the benefits of directed blood donation
+    - Why is directed blood donor important
+    - Why is directed blood donor different from other types of blood donation
+
+- intent: apheresis_donation
+  examples: |
+    - What is Apheresis Blood Donor
+    - What are the benefits of apheresis blood donation
+    - How does apheresis donation works
+    - What specific components can be donated through apheresis donation
+
+- intent: first_time_donors
+  examples: |
+    - What is First time Donor
+    - What are the benefits of first time blood donation
+    - What shoould a first-time donor expect during donation process
+    - Why is first time blood donor different from other types of blood donation
+
+- intent: regular_voluntary_donors
+  examples: |
+    - What is Regular Voluntary Blood Donor
+    - What are the benefits of regular voluntary blood donation
+    - Why is regular voluntary blood donor important
+    - Why is regular voluntary blood donor different from other types of blood donation
+
+- intent: repeat_voluntary_donors
+  examples: |
+    - What is Repeat Voluntary Blood Donor
+    - What are the benefits of repeat voluntary blood donation
+    -Why is a regular donation schedule encouraged for repeat donors
+    - How does the frequency of donation impact blood supply
+
+- intent: lapsed_voluntary_donors
+  examples: |
+    - What is Lapsed Voluntary Blood Donor
+    - What are the benefits of lapsed voluntary blood donation
+    - Why is lapsed voluntary blood donor important
+    - Why is lapsed voluntary blood donor different from other types of blood donation
+
+- intent: donate_in_tanzania
+  examples: |
+    - How can I donate blood in Tanzania
+    - Where can I donate blood in Tanzania
+    - What are the requirements for donating blood in Tanzania
+    - What are the steps involved in donating blood in Tanzania
+
+- intent: who_can_donate
+  examples: |
+    - Who can donate blood in Tanzania
+    - What are the requirements for donating blood in Tanzania
+    - What are the eligibility criteria for donating blood in Tanzania
+    - What are the age requirements for donating blood in Tanzania
+    - What are the weight requirements for donating blood in Tanzania
+    - What are the health requirements for donating blood in Tanzania
+    - What are the medical conditions that may disqualify someone from donating blood in Tanzania
+
+- intent: donation_time
+  examples: |
+    - How long does it take to donate blood in Tanzania
+    - How long does the blood donation process take
+
+- intent: donation_steps
+  examples: |
+    - What are the steps to blood donation process in Tanzan
+    - Can you walk me through the blood donation process step by step
+    - Are there specific instructions to follow before donating blood
+
+- intent: find_donation_center
+  examples: |
+    - How can someone find a blood donation center in Tanzania
+    - What resources are available to help me find a blood donation center in Tanzania
+    - How can I find a blood donation center near me
+    - How can I find a mobile blood drive near me
+
+- intent: prepare_for_donation
+  examples: |
+    - How can individuals prepare for blood donation
+    - What should I do before donating blood
+    - What should I eat before donating blood
+    - What should I drink before donating blood
+    - What should I avoid before donating blood
+    - What should I do after donating blood
+    - What should I eat after donating blood
+    - What should I drink after donating blood
+    - What should I avoid after donating blood
+
+- intent: pre_donation_info_objectives
+  examples: |
+    - What are the main objectives of Pre-donation information
+    - What is the purpose of Pre-donation information
+    - What is the importance of Pre-donation information
+    - What are the benefits of Pre-donation information
+    - How does pre-donation information contribute to the blood donation process
+    - What specific information is typically provided during pre-donation sessions
+
+- intent: pre_donation_counselling_objectives
+  examples: |
+    - What are the main objectives of Pre-donation counselling
+    - How does counseling enhance the blood donation experience
+    - Are there any confidentiality measures during pre-donation counseling
+    - What is the purpose of Pre-donation counselling
+    - What is the importance of Pre-donation counselling
+    - What are the benefits of Pre-donation counselling
+
+- intent: counselling_during_donation_objectives
+  examples: |
+    - What are the main objectives of Counselling during the blood donation procedure
+    - How does counseling contribute to donor comfort during donation
+    - What topics are typically covered during counseling at the donation site
+    - What is the purpose of Counselling during the blood donation procedure
+    - What is the importance of Counselling during the blood donation procedure
+    - What are the benefits of Counselling during the blood donation procedure
+
+
+- intent: post_donation_counselling_objectives
+  examples: |
+    - What are the main objectives of Post-donation Counselling
+    - How does post-donation counseling contribute to donor retention
+    - Why is post-donation counseling important for donors
+    - What specific information or guidance is provided during post-donation counseling
+
+- intent: blood_donation_safety
+  examples: |
+    - Is blood donation safe
+    - What safety measures are in place during blood donation
+    - How often can someone safely donate blood
+    - Are there any health risks associated with donating blood
+    - How are donors screened to ensure their safety during donation
+
+- intent: mandatory_tests
+  examples: |
+    - What are the mandatory tests performed
+    - What tests are performed on donated blood
+    - What are the tests performed on donated blood
+    - Can you explain the testing process for donated blood
+    - How do these tests ensure the safety of donated blood
+
+- intent: donation_process_steps
+  examples: |
+    - What are the steps involved in donating blood
+    - What are the steps to blood donation process
+    - Can you walk me through the blood donation process step by step
+    - What are the steps involved in donating blood in Tanzania
+    - What are the steps to blood donation process in Tanzania
+    - Can you walk me through the blood donation process step by step in Tanzania
+    - Are there any specific guidelines or criteria for each step of the donation process
+    - How long does each step typically take during the donation process
+
+- intent: donation_frequency
+  examples: |
+    - How often should a person donate blood in a year
+    - What factors determine the frequency of blood donation
+    - How does donation frequency impact blood supply
+    - How often can someone safely donate blood
+    - How often can I donate blood
+    - How often can I donate blood in Tanzania
+    - How often can someone safely donate blood in Tanzania
+    - How often can I donate blood in Tanzania
+
+- intent: pre_donation_considerations
+  examples: |
+    - What are the important things to consider before donating blood
+    - What factors might disqualify someone from donating blood
+    - How should donors prepare themselves mentally and physically before donation
+
+- intent: post_donation_tips
+  examples: |
+    - What are the important things to consider after donating blood
+    - What should donors do after donating blood
+    - How can donors ensure their safety and well-being after donating blood
+    - What post-donation care should a donor follow
+    - Are there any restrictions or precautions after donating blood
+
+- intent: donated_blood_process
+  examples: |
+    - What happens to the blood you donated
+    - What happens to donated blood after it is collected
+    - How is donated blood processed and stored
+    - How is donated blood distributed to hospitals
+    - How is donated blood used in hospitals
+    - How is donated blood used in hospitals in Tanzania
+    - How is donated blood distributed to hospitals in Tanzania
+    - How is donated blood processed and stored in Tanzania
+    - How is donated blood used in hospitals in Tanzania
+
+- intent: donate_with_medical_condition
+  examples: |
+    - Can I donate blood if I have a medical condition
+    - What medical conditions might prevent someone from donating blood
+    - How can someone with a temporary medical condition plan for donation in the future
+
+- intent: donation_benefits
+  examples: |
+    - What are the benefits of donating blood
+    - How does blood donation impact the donor's health
+    - Can you elaborate on the long-term benefits of regular blood donation
+
+- intent: pain_in_donation
+  examples: |
+    - Does donating blood hurt
+    - What are the common sensations or experiences during and after blood donation
+    - How can discomfort during donation be minimized
+
+- intent: most_needed_blood_type
+  examples: |
+    - What is the most needed blood type
+    - How does the demand for different blood types fluctuate
+    - Are there specific situations where certain blood types are needed more urgently
+
+- intent: donate_in_someones_name
+  examples: |
+    - Do I have to donate blood in someone’s name    -
+    - Can you explain the process of anonymous blood donation
+    - How does anonymous donation benefit the overall blood supply
+
+- intent: donate_after_transfusion
+  examples: |
+    - Can I give blood if I have had a transfusion
+    - What are the criteria for donors who have received transfusions in the past
+    - Are there any waiting periods or conditions for donors with a history of transfusionsWhat are the criteria for donors who have received transfusions in the past
+
+- intent: amount_in_regular_donation
+  examples: |
+    - How much blood is collected during a regular donation    - 
+    - What determines the amount of blood collected during different types of donations
+    - Are there any specific donor qualifications for different types of donations
+
+- intent: donate_while_fasting
+  examples: |
+    - Can I donate blood while fasting
+    - How does fasting affect blood donation eligibility
+    - Are there any exceptions or considerations for donating blood while fasting
+
+- intent: blood_centers_tanzania
+  examples: |
+    - How many blood donation centers are there in Tanzania    - 
+    - What regions or areas in Tanzania have donation centers
+    - How accessible are these donation centers to the public
+
+- intent: role_of_AI_in_blood_donation
+  examples: |
+    - What are the role of the National Blood Transfusion Service's Conversational Artificial Intelligence for promoting blood donation (NBTFS CAI) in Tanzania
+    - How does the National Blood Transfusion Service's Conversational Artificial Intelligence for promoting blood donation (NBTFS CAI) in Tanzania contribute to blood donation
+    - How does AI contribute to promoting blood donation awareness in Tanzania
+    - Can the AI support individuals in scheduling donation appointments or finding information about donations
+
+- intent: donate_with_lack_of_sleep
+  examples: |
+    - Can I donate blood if I lack sleep
+    - How does lack of sleep affect blood donation eligibility
+    - Are there any exceptions or considerations for donating blood while lacking sleep
+
+- intent: center_working_hours
+  examples: |
+    - What are your working hours in blood transfusion centers
+    - What are the working hours of blood transfusion centers in Tanzania
+    - How accessible are donation centers during weekends and holidays
+
+- intent: donate_with_diabetes
+  examples: |
+    - Can I donate blood if I have diabetes
+    - How does diabetes affect blood donation eligibility
+    - Are there any exceptions or considerations for donating blood while having diabetes
+
+- intent: donate_with_heart_disease
+  examples: |
+    - Can I donate blood if I have a heart disease
+    - How does heart disease affect blood donation eligibility
+    - Are there any exceptions or considerations for donating blood while having heart disease
+
+- intent: schedule_appointment
+  examples: |
+    - Do I have to schedule an appointment to donate blood
+    - How can I schedule an appointment to donate blood
+    - How can I schedule an appointment to donate blood in Tanzania
+    - What are the advantages of scheduling an appointment for blood donation
+    - Are walk-ins accepted at donation centers without prior appointments
+
+- intent: donate_after_operation
+  examples: |
+    - Can a person with an operation donate blood
+    - How does a recent operation affect blood donation eligibility
+    - Are there any exceptions or considerations for donating blood after an operation
+
+- intent: donate_with_thyroid_problem
+  examples: |
+    - Can I donate blood if I have a thyroid problem
+    - How does a thyroid problem affect blood donation eligibility
+    - Are there any exceptions or considerations for donating blood while having a thyroid problem
+
+- intent: who_cannot_donate
+  examples: |
+    - Who cannot donate blood
+    - What factors might disqualify someone from donating blood
+    - What medical conditions might prevent someone from donating blood
+    - What are the criteria for donors who have received transfusions in the past
+    - What are the age requirements for donating blood
+    - What are the weight requirements for donating blood
+    - What are the health requirements for donating blood
+    - What are the medical conditions that may disqualify someone from donating blood
+
+- intent: qualifying_age_weight
+  examples: |
+    - Which age and weight qualifies to donate blood in Tanzania
+    - Are there any age or weight restrictions for first-time donors in Tanzania
+    - How does age and weight impact the donation process or eligibility
+
+- intent: donate_with_medical_condition_2
+  examples: |
+    - Can I donate blood if I have a medical condition
+    - What medical conditions might prevent someone from donating blood
+    - How can someone with a temporary medical condition plan for donation in the future
+
+- intent: international_blood_donation_day
+  examples: |
+    - What is International Blood Donation Day
+    - What is the purpose of International Blood Donation Day
+    - Why is International Blood Donation Day observed
+    - How does this day contribute to raising awareness about blood donation
+
+- intent: hiv_infection_during_donation
+  examples: |
+    - Can I get infected with HIV while donating blood
+    - How does the blood donation process ensure the safety of donors
+    - How is the safety of blood and equipment ensured during donation
+    - What safety measures are in place during blood donation
+    - How often can someone safely donate blood
+    - Are there any health risks associated with donating blood
+
+- intent: activities_after_donation
+  examples: |
+    - Can you participate in sports or other intense activities after donating blood
+    - How does blood donation affect the donor's ability to engage in physical activities
+
+- intent: get_test_results
+  examples: |
+    - Will I be given the results of my blood tests
+    - How can donors access their test results
+    - What is the process for receiving test results
+    - How long does it take to receive test results
+    - What happens if a donor tests positive for a disease
+    - What happens if a donor tests positive for a disease in Tanzania
+    - How are donors notified of their test results
+    - How are donors notified of their test results in Tanzania
+
+- intent: sports_after_donation
+  examples: |
+    - Can you participate in sports or other intense activities after donating blood
+    - How does blood donation affect the donor's ability to engage in physical activities

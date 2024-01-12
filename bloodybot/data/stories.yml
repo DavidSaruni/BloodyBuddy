@@ -1,30 +1,365 @@
-version: "3.1"
+# #version: "3.1"
+# #
+# #stories:
+# #- story: order + show menu happy path
+# #  steps:
+# #  - intent: greet
+# #  - action: action_llm_rephrase_response_common
+# #  - intent: order
+# #  - action: action_llm_rephrase_response_common
+# #  - intent: affirm
+# #  - action: action_llm_generate_response_menu
+# #  - intent: thank
+# #  - action: action_llm_rephrase_response_common
+# #
+# #- story: order + show menu happy path
+# #  steps:
+# #  - intent: greet
+# #  - action: action_llm_rephrase_response_common
+# #  - intent: order
+# #  - action: action_llm_rephrase_response_common
+# #  - intent: deny
+# #  - action: action_llm_rephrase_response_goodbye
 
-stories:
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+# ## Story 1
+# * greet
+#   - utter_greet
+# * inform_blood_donation
+#   - utter_provide_blood_donation_info
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+# ## Story 2
+# * greet
+#   - utter_greet
+# * inform_blood_drop_facts
+#   - utter_provide_blood_drop_facts
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+# ## Story 3
+# * greet
+#   - utter_greet
+# * inform_bring_friend
+#   - utter_encourage_bring_friend
+
+# ## Story 4
+# * greet
+#   - utter_greet
+# * inform_why_donate_blood
+#   - utter_explain_why_donate_blood
+
+# ## Story 5
+# * greet
+#   - utter_greet
+# * inform_why_me
+#   - utter_explain_why_me
+
+# ## Story 6
+# * greet
+#   - utter_greet
+# * inform_voluntary_donation
+#   - utter_explain_voluntary_donation
+
+# ## Story 7
+# * greet
+#   - utter_greet
+# * inform_vnrbd
+#   - utter_explain_vnrbd
+
+# ## Story 8
+# * greet
+#   - utter_greet
+# * inform_family_replacement_donor
+#   - utter_explain_family_replacement_donor
+
+# ## Story 9
+# * greet
+#   - utter_greet
+# * inform_paid_donor
+#   - utter_explain_paid_donor
+
+# ## Story 10
+# * greet
+#   - utter_greet
+# * inform_autologous_donor
+#   - utter_explain_autologous_donor
+
+# ## Story 11
+# * greet
+#   - utter_greet
+# * inform_directed_donor
+#   - utter_explain_directed_donor
+
+# ## Story 12
+# * greet
+#   - utter_greet
+# * inform_apheresis_donor
+#   - utter_explain_apheresis_donor
+
+# ## Story 13
+# * greet
+#   - utter_greet
+# * inform_first_time_donor
+#   - utter_explain_first_time_donor
+
+# ## Story 14
+# * greet
+#   - utter_greet
+# * inform_regular_donor
+#   - utter_explain_regular_donor
+
+# ## Story 15
+# * greet
+#   - utter_greet
+# * inform_repeat_donor
+#   - utter_explain_repeat_donor
+
+# ## Story 16
+# * greet
+#   - utter_greet
+# * inform_lapsed_donor
+#   - utter_explain_lapsed_donor
+
+# ## Story 17
+# * greet
+#   - utter_greet
+# * inform_donate_tanzania
+#   - utter_explain_donate_tanzania
+
+# ## Story 18
+# * greet
+#   - utter_greet
+# * inform_eligibility_tanzania
+#   - utter_explain_eligibility_tanzania
+
+# ## Story 19
+# * greet
+#   - utter_greet
+# * inform_donation_time
+#   - utter_explain_donation_time
+
+# ## Story 20
+# * greet
+#   - utter_greet
+# * inform_donation_steps
+#   - utter_explain_donation_steps
+
+# ## Story 21
+# * greet
+#   - utter_greet
+# * inform_find_center
+#   - utter_explain_find_center
+
+# ## Story 22
+# * greet
+#   - utter_greet
+# * inform_prepare_donation
+#   - utter_explain_prepare_donation
+
+# ## Story 23
+# * greet
+#   - utter_greet
+# * inform_pre_donation_info
+#   - utter_explain_pre_donation_info
+
+# ## Story 24
+# * greet
+#   - utter_greet
+# * inform_pre_donation_counsel
+#   - utter_explain_pre_donation_counsel
+
+# ## Story 25
+# * greet
+#   - utter_greet
+# * inform_during_donation_counsel
+#   - utter_explain_during_donation_counsel
+
+# ## Story 26
+# * greet
+#   - utter_greet
+# * inform_post_donation_counsel
+#   - utter_explain_post_donation_counsel
+
+# ## Story 27
+# * greet
+#   - utter_greet
+# * inform_safety_donation
+#   - utter_explain_safety_donation
+
+# ## Story 28
+# * greet
+#   - utter_greet
+# * inform_mandatory_tests
+#   - utter_explain_mandatory_tests
+
+# ## Story 29
+# * greet
+#   - utter_greet
+# * inform_donation_process
+#   - utter_explain_donation_process
+
+# ## Story 30
+# * greet
+#   - utter_greet
+# * inform_donation_frequency
+#   - utter_explain_donation_frequency
+
+# ## Story 31
+# * greet
+#   - utter_greet
+# * inform_pre_donation_considerations
+#   - utter_explain_pre_donation_considerations
+
+# ## Story 32
+# * greet
+#   - utter_greet
+# * inform_post_donation_considerations
+#   - utter_explain_post_donation_considerations
+
+# ## Story 33
+# * greet
+#   - utter_greet
+# * inform_donated_blood_process
+#   - utter_explain_donated_blood_process
+
+# ## Story 34
+# * greet
+#   - utter_greet
+# * inform_medical_condition_donation
+#   - utter_explain_medical_condition_donation
+
+# ## Story 35
+# * greet
+#   - utter_greet
+# * inform_benefits_donating_blood
+#   - utter_explain_benefits_donating_blood
+
+# ## Story 36
+# * greet
+#   - utter_greet
+# * inform_pain_blood_donation
+#   - utter_explain_pain_blood_donation
+
+# ## Story 37
+# * greet
+#   - utter_greet
+# * inform_most_needed_blood_type
+#   - utter_explain_most_needed_blood_type
+
+# ## Story 38
+# * greet
+#   - utter_greet
+# * inform_anonymous_blood_donation
+#   - utter_explain_anonymous_blood_donation
+
+# ## Story 39
+# * greet
+#   - utter_greet
+# * inform_transfusion_donation
+#   - utter_explain_transfusion_donation
+
+# ## Story 40
+# * greet
+#   - utter_greet
+# * inform_blood_amount_donation
+#   - utter_explain_blood_amount_donation
+
+# ## Story 41
+# * greet
+#   - utter_greet
+# * inform_fasting_donation
+#   - utter_explain_fasting_donation
+
+# ## Story 42
+# * greet
+#   - utter_greet
+# * inform_centers_tanzania
+#   - utter_explain_centers_tanzania
+
+# ## Story 43
+# * greet
+#   - utter_greet
+# * inform_role_ai_donation
+#   - utter_explain_role_ai_donation
+
+# ## Story 44
+# * greet
+#   - utter_greet
+# * inform_sleep_donation
+#   - utter_explain_sleep_donation
+
+# ## Story 45
+# * greet
+#   - utter_greet
+# * inform_work_hours_centers
+#   - utter_explain_work_hours_centers
+
+# ## Story 46
+# * greet
+#   - utter_greet
+# * inform_diabetes_donation
+#   - utter_explain_diabetes_donation
+
+# ## Story 47
+# * greet
+#   - utter_greet
+# * inform_heart_disease_donation
+#   - utter_explain_heart_disease_donation
+
+# ## Story 48
+# * greet
+#   - utter_greet
+# * inform_appointment_donation
+#   - utter_explain_appointment_donation
+
+# ## Story 49
+# * greet
+#   - utter_greet
+# * inform_operation_donation
+#   - utter_explain_operation_donation
+
+# ## Story 50
+# * greet
+#   - utter_greet
+# * inform_thyroid_donation
+#   - utter_explain_thyroid_donation
+
+# ## Story 51
+# * greet
+#   - utter_greet
+# * inform_who_cannot_donate
+#   - utter_explain_who_cannot_donate
+
+# ## Story 52
+# * greet
+#   - utter_greet
+# * inform_age_weight_donation
+#   - utter_explain_age_weight_donation
+
+# ## Story 53
+# * greet
+#   - utter_greet
+# * inform_medical_condition_donation
+#   - utter_explain_medical_condition_donation
+
+# ## Story 54
+# * greet
+#   - utter_greet
+# * inform_blood_donation_day
+#   - utter_explain_blood_donation_day
+
+# ## Story 55
+# * greet
+#   - utter_greet
+# * inform_HIV_infection_donation
+#   - utter_explain_HIV_infection_donation
+
+# ## Story 56
+# * greet
+#   - utter_greet
+# * inform_blood_test_results
+#   - utter_explain_blood_test_results
+
+# ## Story 57
+# * greet
+#   - utter_greet
+# * inform_physical_activities_donation
+#   - utter_explain_physical_activities_donation
